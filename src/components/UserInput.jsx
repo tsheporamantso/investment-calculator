@@ -1,5 +1,4 @@
-const UserInput = ({onChange, userInput}) => { 
-
+const UserInput = ({ onChange, userInput }) => {
   return (
     <section id="user-input">
       <div className="input-group">
@@ -35,8 +34,12 @@ const UserInput = ({onChange, userInput}) => {
         </p>
         <p>
           <label>Duration</label>
-          <input type="number" required value={userInput.duration}
-            onChange={(e) => onChange("duration", e.target.value)}/>
+          <input
+            type="number"
+            required
+            value={userInput.duration}
+            onChange={(e) => onChange("duration", e.target.value)}
+          />
         </p>
       </div>
     </section>
